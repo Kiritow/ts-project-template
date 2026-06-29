@@ -2,7 +2,8 @@
   "name": "ts-project-template",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
+  "type": "module",
   "scripts": {
     "build": "npm run eslint && rm -rf dist/ && tsgo && tsc-alias",
     "eslint": "eslint -c eslint.config.ts --cache src/",
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.21",
+    "kafkajs": "^2.2.4",
     "mysql2": "^3.22.5",
     "pg": "^8.22.0",
     "winston": "^3.19.0"

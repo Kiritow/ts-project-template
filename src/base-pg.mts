@@ -1,5 +1,5 @@
 import { PoolConfig, Pool, PoolClient, DatabaseError, QueryResult } from "pg";
-import { Logger as ILogger } from "./base-logger";
+import { Logger as ILogger } from "./base-logger.mjs";
 
 export function isDatabaseError(err: unknown): err is DatabaseError {
   return err instanceof DatabaseError;

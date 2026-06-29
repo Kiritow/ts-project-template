@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import * as mysql from "mysql2";
-import { Logger as ILogger } from "./base-logger";
+import { Logger as ILogger } from "@/base-logger.mjs";
 
 export interface QueryOptions {
   disableLogger?: boolean;
