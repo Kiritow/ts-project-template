@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.npmrc
+.npmrc.*
+.eslintcache
+.vscode/
+
+*.secret
+pytools/env/
+localconfigs/
+static/
+.kube/
+tests/
+idl/
+
+node_modules/
+dist/

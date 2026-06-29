@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "esModuleInterop": true,
+        "target": "ES2022",
+        "moduleResolution": "nodenext",
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "declaration": true,
+
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+
+        "lib": [
+            "ES2022"
+        ],
+        "types": [
+            "node"
+        ],
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "typeRoots": [
+            "types",
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

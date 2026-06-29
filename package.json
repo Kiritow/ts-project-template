@@ -1,0 +1,28 @@
+{
+  "name": "ts-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run eslint && rm -rf dist/ && tsgo && tsc-alias",
+    "eslint": "eslint -c eslint.config.ts --cache src/",
+    "build:prod": "npm run eslint:prod && rm -rf dist/ && tsc && tsc-alias",
+    "eslint:prod": "eslint -c eslint.config.ts src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript/native-preview": "^7.0.0-dev.20260629.1",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "jiti": "^2.7.0",
+    "prettier": "^3.9.1",
+    "tsc-alias": "^1.8.17",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
+  },
+  "dependencies": {}
+}
